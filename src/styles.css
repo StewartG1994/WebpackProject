@@ -68,12 +68,15 @@ ul {
     
 
 }
-ul > li {
+button {
     display: inline;
     padding: 10px;
+    background-color: #F4EBD9;
+    border: none;
+    font-size: 1.2rem;
 }
 
-li:hover{
+button:hover{
     color: red;
 }
 .about{
@@ -116,4 +119,11 @@ gap: 10px;
     color: #04151F;
     text-align: center;
     padding: 20px;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

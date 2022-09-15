@@ -1,12 +1,16 @@
 import './styles.css';
 import passion from './images/passion.jpg';
 import pizza from './images/pizza.jpg';
-import image from './images/image.jpg'
+import image from './images/image.jpg';
+
 
 const content = document.querySelector('.content')
 
 function createHome () {
 
+content.textContent = '';
+const contentBox = document.createElement('div')
+contentBox.classList.add('contentBox')
 const header = document.createElement('div');
 const title = document.createElement('h1')
 title.textContent = 'Paddys Pizza Palace'
@@ -17,10 +21,12 @@ content.appendChild(header)
 const navDiv = document.createElement('div')
 const navList = document.createElement('ul')
 navList.classList.add('navBar')
-const homeBtn = document.createElement('li')
-const menuBtn = document.createElement('li')
-const contactBtn = document.createElement('li')
-
+const homeBtn = document.createElement('button')
+const menuBtn = document.createElement('button')
+const contactBtn = document.createElement('button')
+contactBtn.classList.add('contactButton')
+homeBtn.classList.add('homeButton')
+menuBtn.classList.add('menuButton')
 homeBtn.textContent = 'Home';
 menuBtn.textContent = 'Menu';
 contactBtn.textContent = 'Contact'
@@ -36,7 +42,7 @@ const about = document.createElement('div');
 const aboutContent = document.createElement('p')
 aboutContent.textContent= 'Our love affair with Italian food is long-term. In 1965, a wise man called Peter Worthington knew pizza in London could be better. So he shipped over an authentic oven from Italy, opened the first-ever Paddys Pizza and got to work serving the great pizza the UK deserved.'
 about.appendChild(aboutContent)
-content.appendChild(about)
+contentBox.appendChild(about)
 about.classList.add('about')
 
 const gridDiv = document.createElement('div');
@@ -87,12 +93,12 @@ itemThree.classList.add('itemOne');
 gridDiv.appendChild(itemOne)
 gridDiv.appendChild(itemTwo)
 gridDiv.appendChild(itemThree)
-content.appendChild(gridDiv)
+contentBox.appendChild(gridDiv)
 
 const footer = document.createElement('div');
 footer.textContent = 'A project by Stewart Gliniecki as part of The Odin Project Curriculum'
 footer.classList.add('footer')
-
+content.appendChild(contentBox)
 content.appendChild(footer)
 }
 
