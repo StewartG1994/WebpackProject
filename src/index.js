@@ -1,1 +1,3 @@
-console.log('check')
+import { createHome} from "./home";
+
+createHome()
