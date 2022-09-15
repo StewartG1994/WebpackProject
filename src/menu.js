@@ -33,12 +33,23 @@ const menuItemFactory = (item, Itemimage, description) =>{
 
 function menu() {
     const contentBox = document.querySelector('.contentBox')
+    contentBox.classList.toggle('displayToggle')
     contentBox.textContent = '';
 
     const itemOne = menuItemFactory('Pizza', pizza, 'test')
     const itemTwo = menuItemFactory('Test', pizza, 'Test')
+    const itemThree = menuItemFactory('Test', pizza, 'Test')
+    const itemFour = menuItemFactory('Test', pizza, 'Test')
+    const itemFive = menuItemFactory('Test', pizza, 'Test')
+    const itemSix = menuItemFactory('Test', pizza, 'Test')
     contentBox.appendChild(itemOne.itemBox())
     contentBox.appendChild(itemTwo.itemBox())
+    contentBox.appendChild(itemThree.itemBox())
+
+    contentBox.appendChild(itemFour.itemBox())
+    contentBox.appendChild(itemFive.itemBox())
+    contentBox.appendChild(itemSix.itemBox())
+
 
     
 }
