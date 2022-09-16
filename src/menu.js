@@ -36,12 +36,12 @@ function menu() {
     contentBox.classList.toggle('displayToggle')
     contentBox.textContent = '';
 
-    const itemOne = menuItemFactory('Pizza', pizza, 'test')
-    const itemTwo = menuItemFactory('Test', pizza, 'Test')
-    const itemThree = menuItemFactory('Test', pizza, 'Test')
-    const itemFour = menuItemFactory('Test', pizza, 'Test')
-    const itemFive = menuItemFactory('Test', pizza, 'Test')
-    const itemSix = menuItemFactory('Test', pizza, 'Test')
+    const itemOne = menuItemFactory('Cheese', pizza, '£4.99')
+    const itemTwo = menuItemFactory('Pepperani', pizza, '£5.49')
+    const itemThree = menuItemFactory('Bacon and Egg', pizza, '£9.99')
+    const itemFour = menuItemFactory('Napoli', pizza, '£12.99')
+    const itemFive = menuItemFactory('Beans', pizza, '£6.99')
+    const itemSix = menuItemFactory('Pinapple', pizza, 'Banned from establishment')
     contentBox.appendChild(itemOne.itemBox())
     contentBox.appendChild(itemTwo.itemBox())
     contentBox.appendChild(itemThree.itemBox())

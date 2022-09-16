@@ -1,7 +1,12 @@
 import './styles.css';
+import {tab} from './index';
 
 function contact() {
+
     const contentBox = document.querySelector('.contentBox')
+    contentBox.classList.toggle('contentBox');
+
+
 
     contentBox.textContent = '';
     const contactdiv = document.createElement('div');
@@ -27,6 +32,8 @@ function contact() {
     contactdiv.appendChild(contacte)
     contactdiv.appendChild(contactf)
     contentBox.appendChild(contactdiv);
+ 
+
 }
 
 export {contact}

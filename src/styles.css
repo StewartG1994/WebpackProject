@@ -122,8 +122,7 @@ gap: 10px;
     display: flex;
     padding-top:30px ;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .contactp{
@@ -149,5 +148,8 @@ gap: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
+ 
+    align-items: center;
+    justify-content: center;
 }
 
